@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EvolkAI</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<script>
+		const nav = document.querySelector('nav');
+		const menu = document.querySelector('.menu');
+		
+		menu.addEventListener('click', () => {
+		  nav.classList.toggle('active');
+		});
+	</script>
+</head>
+<body>
+	<header class = "sticky">
+		<h1>Evolk<span class="ai">AI</span></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html"><h3>Home</h3></a></li>
+				<li><a href="About.html"><h3>About</h3></a></li>
+				<li><a href="vision.html"><h3>Vision</h3></a></li>
+				<li><a href="contact.html"><h3>Contact</h3></a></li>
+            </ul>
+		</nav>
+        <button onclick="window.location.href='login.html'">Login/Signup</button>
+	</header>
+	<main>
+		
+		<br><br><br>		  
+		<section class="transparent-section">
+			<form id="login-form" class="form" method="post">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+            </form>
+            <form id="signup-form" class="form" method="POST" action="/submit" >
+                <h2>Sign up</h2>
+                <input type="text" name="Username" placeholder="Username" required id="username">
+                <input type="password" id="pass-word" name="password" placeholder="Enter password">
+				<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password">
+                <button type="submit">Sign up</button>
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </form>                            
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Evolk<span class="ai">AI</span>. All rights reserved.</p>
+	</footer>
+	<div id="particles"></div>
+</body>
+</html>

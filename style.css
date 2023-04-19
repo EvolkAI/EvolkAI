@@ -1,0 +1,257 @@
+/* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+	--bg-color: #f2f2f2;
+	--text-color: #333;
+	--button-bg-color: rgb(44, 188, 236);;
+	--button-text-color: #fff;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fff;
+	background-color: #222;
+	transition: background-color 0.5s ease;
+	background-image: url("5.jpeg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	color: #fff;
+	background-color: #444;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #333;
+	z-index: 100;
+  }
+
+  a {
+	color: #333;
+	text-decoration: none;
+	transition: color 0.5s ease;
+  }
+  
+  nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+  }
+  
+  nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+  }
+  
+  nav li {
+	margin: 0 20px;
+  }
+  
+  nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	transition: color 0.2s ease-in-out;
+  }
+
+  nav a:hover {
+	color: rgb(44, 188, 236);
+}
+  
+  main {
+	padding-top: 100px; /* add padding to main content to avoid being hidden by sticky header */
+	padding: 2rem;
+}
+
+
+section {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+section p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+  button {
+	/* background-color: var(--button-bg-color); */
+	background: linear-gradient(to right, #30b9f8, #ee0979);
+	/* color: var(--button-text-color); */
+	color: #fff;
+	/* border: none;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
+	border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+ button:hover {
+	/* background-color: #fff;
+	color: rgb(44, 188, 236); */
+	background: linear-gradient(to right, #ee0979, #09dfee);
+}
+
+.transparent-section {
+	background-color: rgba(255, 255, 255, 0.1); /* set the background color to white with 50% opacity */
+	padding: 20px;
+  }
+  
+  h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+  }
+  
+  p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 20px;
+	text-align: justify;
+  }
+  
+  /* Change background color on page load */
+  body.loading {
+	background-color: #000;
+  }
+  
+  /* Fade in content on page load */
+  body.loading * {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+  }
+  
+  body.loaded {
+	background-color: #fff;
+  }
+  
+  /* Fade in content after page load */
+  body.loaded * {
+	opacity: 1;
+  }
+
+footer {
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+aside img {
+	width: 200px;
+	height: auto;
+	margin: 20px;
+}
+.justify-align {
+	text-align: justify;
+  }
+
+.left-align {
+	text-align: left;
+}
+
+.ai {
+	color: rgb(44, 188, 236);
+}
+.container {
+	display: flex;
+  }
+  
+  .left-section, .right-section {
+	flex: 1;
+	padding: 20px;
+  }
+  
+  .left-section {
+	background-color: #333;
+  }
+  
+  .right-section {
+	background-color: #333;
+  }
+
+  .form {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  .form input {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  .form button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(44, 188, 236);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .form p {
+	margin-top: 20px;
+  }
+  
+  .form a {
+	color: rgb(44, 188, 236);
+  }
+  
+
+  .round-frame {
+	border-radius: 50%;
+  }
+  .animate-slide-in {
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animate-slide-in.active {
+	opacity: 1;
+	transform: translateX(0);
+  }
+
+  
+  
+	
+
+
